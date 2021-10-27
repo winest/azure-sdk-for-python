@@ -164,7 +164,7 @@ function Get-python-GithubIoDocIndex()
 function ValidatePackage($packageName, $packageVersion, $workingDirectory) {
   $packageExpression = "$packageName$packageVersion"
   Write-Host "Validating $packageExpression"
-  docker run -e TARGET_PACKAGE=$packageExpression azuresdkimages.azurecr.io/pyrefautocr:latest 2>&1
+  docker run -e TARGET_PACKAGE=$packageName azuresdkimages.azurecr.io/pyrefautocr:latest 2>&1
   if ($LASTEXITCODE -ne 0) {
     LogWarning "Package install failed: $($Package.name)"
     return $false
