@@ -164,46 +164,51 @@ function Get-python-GithubIoDocIndex()
 function ValidatePackage($packageName, $packageVersion, $workingDirectory) {
   $packageExpression = "$packageName$packageVersion"
   Write-Host "Validating $packageExpression"
-
-  $installTargetFolder = Join-Path $workingDirectory $packageName
-  New-Item -ItemType Directory -Force -Path $installTargetFolder | Out-Null
-
-  # Add more validation by replicating as much of the docs CI process as
-  # possible
-  # https://github.com/Azure/azure-sdk-for-python/issues/20109
-  try {
-    $pipInstallOutput = ""
-    $extraIndexUrl = " --extra-index-url=$PackageSourceOverride"
-    if ($PackageSourceOverride) {
-      Write-Host "pip install $packageExpression --no-cache-dir --target $installTargetFolder --extra-index-url=$PackageSourceOverride"
-      $pipInstallOutput = pip `
-        install `
-        $packageExpression `
-        --no-cache-dir `
-        --target $installTargetFolder `
-        --extra-index-url=$PackageSourceOverride 2>&1
-    }
-    else {
-      Write-Host "pip install $packageExpression --no-cache-dir --target $installTargetFolder"
-      $pipInstallOutput = pip `
-        install `
-        $packageExpression `
-        --no-cache-dir `
-        --target $installTargetFolder 2>&1
-    }
-    if ($LASTEXITCODE -ne 0) {
-      LogWarning "pip install failed for $packageExpression"
-      Write-Host $pipInstallOutput
-      return $false
-    }
-  } catch {
-    LogWarning "pip install failed for $packageExpression with exception"
-    LogWarning $_.Exception
-    LogWarning $_.Exception.StackTrace
+  docker run -e TARGET_PACKAGE=$packageExpression azuresdkimages.azurecr.io/pyrefautocr:latest 2>&1
+  if ($LASTEXITCODE -ne 0) {
+    LogWarning "Package install failed: $($Package.name)"
     return $false
   }
-
   return $true
+  # $installTargetFolder = Join-Path $workingDirectory $packageName
+  # New-Item -ItemType Directory -Force -Path $installTargetFolder | Out-Null
+
+  # # Add more validation by replicating as much of the docs CI process as
+  # # possible
+  # # https://github.com/Azure/azure-sdk-for-python/issues/20109
+  # try {
+  #   $pipInstallOutput = ""
+  #   $extraIndexUrl = " --extra-index-url=$PackageSourceOverride"
+  #   if ($PackageSourceOverride) {
+  #     Write-Host "pip install $packageExpression --no-cache-dir --target $installTargetFolder --extra-index-url=$PackageSourceOverride"
+  #     $pipInstallOutput = pip `
+  #       install `
+  #       $packageExpression `
+  #       --no-cache-dir `
+  #       --target $installTargetFolder `
+  #       --extra-index-url=$PackageSourceOverride 2>&1
+  #   }
+  #   else {
+  #     Write-Host "pip install $packageExpression --no-cache-dir --target $installTargetFolder"
+  #     $pipInstallOutput = pip `
+  #       install `
+  #       $packageExpression `
+  #       --no-cache-dir `
+  #       --target $installTargetFolder 2>&1
+  #   }
+  #   if ($LASTEXITCODE -ne 0) {
+  #     LogWarning "pip install failed for $packageExpression"
+  #     Write-Host $pipInstallOutput
+  #     return $false
+  #   }
+  # } catch {
+  #   LogWarning "pip install failed for $packageExpression with exception"
+  #   LogWarning $_.Exception
+  #   LogWarning $_.Exception.StackTrace
+  #   return $false
+  # }
+
+  # return $true
 }
 
 $PackageExclusions = @{
