@@ -4,7 +4,7 @@ import pytest
 
 from devtools_testutils import AzureTestCase
 from azure_devtools.scenario_tests import RecordingProcessor
-from azure.maps.search import SearchClient
+from azure.maps.search import SearchClient, LatLong
 
 
 
