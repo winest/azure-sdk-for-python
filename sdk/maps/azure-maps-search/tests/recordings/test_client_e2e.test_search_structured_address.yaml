@@ -1,0 +1,95 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-maps-search/1.0-preview Python/3.7.8 (Windows-10-10.0.19041-SP0)
+      subscription-key:
+      - <RealSubscriptionKey>
+      x-ms-client-id:
+      - <RealClientId>
+    method: GET
+    uri: https://atlas.microsoft.com/search/address/structured/json?api-version=1.0&countryCode=TW&streetNumber=68&streetName=Sec.%205%2C%20Zhongxiao%20E.%20Rd.&municipality=Taipei%20City&municipalitySubdivision=Xinyi%20Dist.
+  response:
+    body:
+      string: '{"summary":{"query":"sec 5 zhongxiao e rd 68 taipei city xinyi dist","queryType":"NON_NEAR","queryTime":352,"numResults":10,"offset":0,"totalResults":11147,"fuzzyLevel":2},"results":[{"type":"Point
+        Address","id":"TW/PAD/p0/4153525","score":17.4816398621,"address":{"streetNumber":"5","streetName":"Zhongxiao
+        East Road Section 5 Lane 790 Alley 68","municipalitySubdivision":"Xinyi District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"110","extendedPostalCode":"11082","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"5,
+        Zhongxiao East Road Section 5 Lane 790 Alley 68, Xinyi District, Taipei City
+        11082","localName":"Xinyi District"},"position":{"lat":25.04055,"lon":121.58325},"viewport":{"topLeftPoint":{"lat":25.04145,"lon":121.58226},"btmRightPoint":{"lat":25.03965,"lon":121.58424}},"entryPoints":[{"type":"main","position":{"lat":25.04066,"lon":121.58321}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/4289697","score":16.3162174225,"address":{"streetNumber":"68","streetName":"Zhongxiao
+        East Road Section 5","municipalitySubdivision":"Xinyi District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"110","extendedPostalCode":"11065","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"68,
+        Zhongxiao East Road Section 5, Xinyi District, Taipei City 11065","localName":"Xinyi
+        District"},"position":{"lat":25.04065,"lon":121.56669},"viewport":{"topLeftPoint":{"lat":25.04155,"lon":121.5657},"btmRightPoint":{"lat":25.03975,"lon":121.56768}},"entryPoints":[{"type":"main","position":{"lat":25.04103,"lon":121.5667}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/4089115","score":16.142988205,"address":{"streetNumber":"68","streetName":"Zhongxiao
+        East Road Section 5 Lane 236","municipalitySubdivision":"Xinyi District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"110","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"68,
+        Zhongxiao East Road Section 5 Lane 236, Xinyi District, Taipei City 110","localName":"Xinyi
+        District"},"position":{"lat":25.03683,"lon":121.57111},"viewport":{"topLeftPoint":{"lat":25.03773,"lon":121.57012},"btmRightPoint":{"lat":25.03593,"lon":121.5721}},"entryPoints":[{"type":"main","position":{"lat":25.03685,"lon":121.57185}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/4236810","score":16.142988205,"address":{"streetNumber":"68","streetName":"Zhongxiao
+        East Road Section 5 Lane 423","municipalitySubdivision":"Xinyi District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"110","extendedPostalCode":"11089","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"68,
+        Zhongxiao East Road Section 5 Lane 423, Xinyi District, Taipei City 11089","localName":"Xinyi
+        District"},"position":{"lat":25.04355,"lon":121.5755},"viewport":{"topLeftPoint":{"lat":25.04445,"lon":121.57451},"btmRightPoint":{"lat":25.04265,"lon":121.57649}},"entryPoints":[{"type":"main","position":{"lat":25.04338,"lon":121.57542}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/2678472","score":15.9761142731,"address":{"streetNumber":"68","streetName":"Zhongxiao
+        East Road Section 5 Lane 372 Alley 27","municipalitySubdivision":"Xinyi District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"110","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"68,
+        Zhongxiao East Road Section 5 Lane 372 Alley 27, Xinyi District, Taipei City
+        110","localName":"Xinyi District"},"position":{"lat":25.03931,"lon":121.57538},"viewport":{"topLeftPoint":{"lat":25.04021,"lon":121.57439},"btmRightPoint":{"lat":25.03841,"lon":121.57637}},"entryPoints":[{"type":"main","position":{"lat":25.03944,"lon":121.57536}}]},{"type":"Address
+        Range","id":"TW/ADDR/p0/173007","score":15.9560041428,"address":{"streetNumber":"68","streetName":"Zhongxiao
+        East Road Section 5 Lane 790","municipalitySubdivision":"Xinyi District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"110","extendedPostalCode":"11082","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"68,
+        Zhongxiao East Road Section 5 Lane 790, Xinyi District, Taipei City 11082","localName":"Xinyi
+        District"},"position":{"lat":25.04012,"lon":121.58374},"viewport":{"topLeftPoint":{"lat":25.04012,"lon":121.58374},"btmRightPoint":{"lat":25.04012,"lon":121.58374}},"addressRanges":{"rangeRight":"68
+        - 68","from":{"lat":25.04012,"lon":121.58374},"to":{"lat":25.04012,"lon":121.58374}}},{"type":"Point
+        Address","id":"TW/PAD/p0/2441137","score":15.8877363205,"address":{"streetNumber":"1-5","streetName":"Zhongxiao
+        East Road Section 5","municipalitySubdivision":"Xinyi District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"110","extendedPostalCode":"11071","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"1-5,
+        Zhongxiao East Road Section 5, Xinyi District, Taipei City 11071","localName":"Xinyi
+        District"},"position":{"lat":25.04152,"lon":121.565},"viewport":{"topLeftPoint":{"lat":25.04242,"lon":121.56401},"btmRightPoint":{"lat":25.04062,"lon":121.56599}},"entryPoints":[{"type":"main","position":{"lat":25.04123,"lon":121.56498}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/2961271","score":15.8877363205,"address":{"streetNumber":"508-5","streetName":"Zhongxiao
+        East Road Section 5","municipalitySubdivision":"Xinyi District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"110","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"508-5,
+        Zhongxiao East Road Section 5, Xinyi District, Taipei City 110","localName":"Xinyi
+        District"},"position":{"lat":25.04077,"lon":121.57859},"viewport":{"topLeftPoint":{"lat":25.04167,"lon":121.5776},"btmRightPoint":{"lat":25.03987,"lon":121.57958}},"entryPoints":[{"type":"main","position":{"lat":25.04101,"lon":121.57843}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/3331981","score":15.8877363205,"address":{"streetNumber":"510-5","streetName":"Zhongxiao
+        East Road Section 5","municipalitySubdivision":"Xinyi District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"110","extendedPostalCode":"11077","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"510-5,
+        Zhongxiao East Road Section 5, Xinyi District, Taipei City 11077","localName":"Xinyi
+        District"},"position":{"lat":25.04104,"lon":121.57912},"viewport":{"topLeftPoint":{"lat":25.04194,"lon":121.57813},"btmRightPoint":{"lat":25.04014,"lon":121.58011}},"entryPoints":[{"type":"main","position":{"lat":25.0413,"lon":121.57895}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/4234137","score":15.8877363205,"address":{"streetNumber":"412-5","streetName":"Zhongxiao
+        East Road Section 5","municipalitySubdivision":"Xinyi District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"110","extendedPostalCode":"11061","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"412-5,
+        Zhongxiao East Road Section 5, Xinyi District, Taipei City 11061","localName":"Xinyi
+        District"},"position":{"lat":25.04047,"lon":121.57523},"viewport":{"topLeftPoint":{"lat":25.04137,"lon":121.57424},"btmRightPoint":{"lat":25.03957,"lon":121.57622}},"entryPoints":[{"type":"main","position":{"lat":25.04081,"lon":121.57525}}]}]}'
+    headers:
+      content-length:
+      - '7408'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Mon, 06 Dec 2021 08:55:46 GMT
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      vary:
+      - Accept-Encoding
+      x-cache:
+      - CONFIG_NOCACHE
+      x-content-type-options:
+      - nosniff
+      x-ms-azuremaps-region:
+      - West US 2
+      x-msedge-ref:
+      - 'Ref A: A0C36DFA6B8E46A4809894FCA1408C78 Ref B: TYO01EDGE1711 Ref C: 2021-12-06T08:55:46Z'
+    status:
+      code: 200
+      message: OK
+version: 1

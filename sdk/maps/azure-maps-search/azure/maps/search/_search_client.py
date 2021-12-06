@@ -9,6 +9,7 @@ from azure.core.tracing.decorator import distributed_trace
 from azure.core.exceptions import HttpResponseError
 from ._generated._search_client import SearchClient as SearchClientGen
 from ._generated.models import SearchAddressResult, PointOfInterestCategoryTreeResult, ReverseSearchAddressResult, ReverseSearchCrossStreetAddressResult, SearchAlongRouteRequest, GeoJsonObject, BatchRequest, SearchAddressBatchResult, ReverseSearchAddressBatchProcessResult, PolygonResult
+from .models import LatLon
 # from .utils import get_authentication_policy, get_headers_policy
 # from .models._models import *
 
@@ -156,12 +157,12 @@ class SearchClient(object):
         :return: SearchAddressResult, or the result of cls(response)
         :raises: ~azure.core.exceptions.HttpResponseError
         """
-        coordinates = {} if not coordinates else coordinates
+        coordinates = LatLon() if not coordinates else coordinates
             
         return self._search_client.fuzzy_search(
             query,
-            lat=coordinates.get('lat'),
-            lon=coordinates.get('lon'),
+            lat=coordinates.lat,
+            lon=coordinates.lon,
             country_filter=country_filter,
             **kwargs
         )
@@ -492,12 +493,12 @@ class SearchClient(object):
         :return: SearchAddressResult, or the result of cls(response)
         :raises: ~azure.core.exceptions.HttpResponseError
         """           
-        coordinates = {} if not coordinates else coordinates
+        coordinates = LatLon() if not coordinates else coordinates
 
         return self._search_client.search_point_of_interest(
             query,
-            lat=coordinates.get('lat'),
-            lon=coordinates.get('lon'),
+            lat=coordinates.lat,
+            lon=coordinates.lon,
             country_filter=country_filter,
             **kwargs
         )
@@ -548,11 +549,11 @@ class SearchClient(object):
         :return: SearchAddressResult, or the result of cls(response)
         :raises: ~azure.core.exceptions.HttpResponseError
         """
-        coordinates = {} if not coordinates else coordinates
+        coordinates = LatLon() if not coordinates else coordinates
 
         return self._search_client.search_nearby_point_of_interest(
-            lat=coordinates.get('lat'),
-            lon=coordinates.get('lon'),
+            lat=coordinates.lat,
+            lon=coordinates.lon,
             **kwargs
         )
 
@@ -621,12 +622,12 @@ class SearchClient(object):
         :return: SearchAddressResult, or the result of cls(response)
         :raises: ~azure.core.exceptions.HttpResponseError
         """
-        coordinates = {} if not coordinates else coordinates
+        coordinates = LatLon() if not coordinates else coordinates
 
         return self._search_client.search_point_of_interest_category(
             query,
-            lat=coordinates.get('lat'),
-            lon=coordinates.get('lon'),
+            lat=coordinates.lat,
+            lon=coordinates.lon,
             country_filter=country_filter,
             **kwargs
         )
@@ -687,12 +688,12 @@ class SearchClient(object):
         :return: SearchAddressResult, or the result of cls(response)
         :raises: ~azure.core.exceptions.HttpResponseError
         """
-        coordinates = {} if not coordinates else coordinates
+        coordinates = LatLon() if not coordinates else coordinates
         
         return self._search_client.search_address(
             query,
-            lat=coordinates.get('lat'),
-            lon=coordinates.get('lon'),
+            lat=coordinates.lat,
+            lon=coordinates.lon,
             **kwargs
         )
 
@@ -754,16 +755,16 @@ class SearchClient(object):
         :raises: ~azure.core.exceptions.HttpResponseError
         """
         return self._search_client.search_structured_address(
-            country_code=structured_address.get('country_code'),
-            cross_street=structured_address.get('cross_street'),
-            street_number=structured_address.get('street_number'),
-            street_name=structured_address.get('street_name'),
-            municipality=structured_address.get('municipality'),
-            municipality_subdivision=structured_address.get('municipality_subdivision'),
-            country_tertiary_subdivision=structured_address.get('country_tertiary_subdivision'),
-            country_secondary_subdivision=structured_address.get('country_secondary_subdivision'),
-            country_subdivision=structured_address.get('country_subdivision'),
-            postal_code=structured_address.get('postal_code'),
+            country_code=structured_address.country_code,
+            cross_street=structured_address.cross_street,
+            street_number=structured_address.street_number,
+            street_name=structured_address.street_name,
+            municipality=structured_address.municipality,
+            municipality_subdivision=structured_address.municipality_subdivision,
+            country_tertiary_subdivision=structured_address.country_tertiary_subdivision,
+            country_secondary_subdivision=structured_address.country_secondary_subdivision,
+            country_subdivision=structured_address.country_subdivision,
+            postal_code=structured_address.postal_code,
             **kwargs
         )
 

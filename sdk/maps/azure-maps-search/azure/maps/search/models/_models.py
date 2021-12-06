@@ -8,16 +8,15 @@ class LatLon(object):
         lat: float=None,
         lon: float=None
     ):
-        self.lat = lat
-        self.lon = lon
-        self.latlon = [self.lat, self.lon]
+        self._lat = lat
+        self._lon = lon
 
     def __transform__(self, **kwargs): # type: (...) -> List[float]
-        return [self.lat, self.lon]
+        return [self._lat, self._lon]
 
     @property
     def lat(self) -> float:
-        return self.lat
+        return self._lat
 
     @lat.setter
     def lat(self, value: float) -> None:
@@ -25,19 +24,19 @@ class LatLon(object):
             raise TypeError('lat.setter(): got {} but expected type is float'
                             .format(type(value).__name__))
         else:
-            self.lat = value
+            self._lat = value
 
     @property
     def lon(self) -> float:
-        return self.lon
+        return self._lon
 
     @lon.setter
-    def age(self, value) -> None:
+    def lon(self, value) -> None:
         if type(value) is not float:
             raise TypeError('lon.setter(): got {} but expected type is float'
                             .format(type(value).__name__))
         else:
-            self.lon = value
+            self._lon = value
 
 class BoundingBox(object):
 
@@ -50,25 +49,7 @@ class BoundingBox(object):
         self.bottom_right = bottom_right
 
 
-class StructuredAddress(msrest.serialization.Model):
-
-    _validation = {
-        'country_code': {'required': True},
-    }
-
-    _attribute_map = {
-        'country_code': {'key': 'country_code', 'type': 'str'},
-        'street_number': {'key': 'street_number', 'type': 'str'},
-        'street_name': {'key': 'street_name', 'type': 'str'},
-        'cross_street': {'key': 'cross_street', 'type': 'str'},
-        'municipality': {'key': 'municipality', 'type': 'str'},
-        'municipality_subvision': {'key': 'municipality_subvision', 'type': 'str'},
-        'country_tertiary_subdivision': {'key': 'country_tertiary_subdivision', 'type': 'str'},
-        'country_secondary_subdivision': {'key': 'country_secondary_subdivision', 'type': 'str'},
-        'country_subdivision': {'key': 'country_subdivision', 'type': 'str'},
-        'postal_code': {'key': 'postal_code', 'type': 'str'},
-    }
-
+class StructuredAddress(object):
     def __init__(
         self,
         *,
@@ -84,7 +65,6 @@ class StructuredAddress(msrest.serialization.Model):
         postal_code: Optional[str] = None,
         **kwargs
     ):
-        super(StructuredAddress, self).__init__(country_code=country_code, **kwargs)
         self.country_code = country_code
         self.cross_street = cross_street
         self.street_number = street_number
