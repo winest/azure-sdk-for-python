@@ -18,7 +18,7 @@ interactions:
     uri: https://atlas.microsoft.com/search/fuzzy/json?api-version=1.0&query=Taiwan%20High%20Speed%20Rail
   response:
     body:
-      string: "{\"summary\":{\"query\":\"taiwan high speed rail\",\"queryType\":\"NON_NEAR\",\"queryTime\":75,\"numResults\":10,\"offset\":0,\"totalResults\":18,\"fuzzyLevel\":1},\"results\":[{\"type\":\"POI\",\"id\":\"g6JpZK8xNTgwMDkwMDA4MTU4MDGhY6NUV06hdqdVbmlmaWVk\",\"score\":8.9105939865,\"info\":\"search:ta:158009000815801-TW\",\"poi\":{\"name\":\"Taiwan
+      string: "{\"summary\":{\"query\":\"taiwan high speed rail\",\"queryType\":\"NON_NEAR\",\"queryTime\":72,\"numResults\":10,\"offset\":0,\"totalResults\":18,\"fuzzyLevel\":1},\"results\":[{\"type\":\"POI\",\"id\":\"g6JpZK8xNTgwMDkwMDA4MTU4MDGhY6NUV06hdqdVbmlmaWVk\",\"score\":8.9105939865,\"info\":\"search:ta:158009000815801-TW\",\"poi\":{\"name\":\"Taiwan
         High Speed Rail Tainan Station\",\"phone\":\"+886 6 600 9000\",\"categorySet\":[{\"id\":7380002}],\"url\":\"www.thsrc.com.tw\",\"categories\":[\"international\",\"railway
         station\"],\"classifications\":[{\"code\":\"RAILWAY_STATION\",\"names\":[{\"nameLocale\":\"en-US\",\"name\":\"international\"},{\"nameLocale\":\"en-US\",\"name\":\"railway
         station\"}]}]},\"address\":{\"streetNumber\":\"100\",\"streetName\":\"Guiren
@@ -95,7 +95,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 06 Dec 2021 08:55:41 GMT
+      - Fri, 10 Dec 2021 07:03:35 GMT
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -107,7 +107,7 @@ interactions:
       x-ms-azuremaps-region:
       - West US 2
       x-msedge-ref:
-      - 'Ref A: AFA100015EFD4EE9A06F6571F825739C Ref B: TYAEDGE1007 Ref C: 2021-12-06T08:55:42Z'
+      - 'Ref A: 266E552ABE9A4A8E97DD55C787B23F9C Ref B: TYO01EDGE0915 Ref C: 2021-12-10T07:03:36Z'
     status:
       code: 200
       message: OK
@@ -130,7 +130,7 @@ interactions:
     uri: https://atlas.microsoft.com/search/fuzzy/json?api-version=1.0&query=Taiwan%20High%20Speed%20Rail&ofs=10
   response:
     body:
-      string: "{\"summary\":{\"query\":\"taiwan high speed rail\",\"queryType\":\"NON_NEAR\",\"queryTime\":180,\"numResults\":8,\"offset\":10,\"totalResults\":18,\"fuzzyLevel\":1},\"results\":[{\"type\":\"POI\",\"id\":\"g6JpZK8xNTgwMDkwMDA4MTk5NDmhY6NUV06hdqdVbmlmaWVk\",\"score\":8.9105939865,\"info\":\"search:ta:158009000819949-TW\",\"poi\":{\"name\":\"Taiwan
+      string: "{\"summary\":{\"query\":\"taiwan high speed rail\",\"queryType\":\"NON_NEAR\",\"queryTime\":103,\"numResults\":8,\"offset\":10,\"totalResults\":18,\"fuzzyLevel\":1},\"results\":[{\"type\":\"POI\",\"id\":\"g6JpZK8xNTgwMDkwMDA4MTk5NDmhY6NUV06hdqdVbmlmaWVk\",\"score\":8.9105939865,\"info\":\"search:ta:158009000819949-TW\",\"poi\":{\"name\":\"Taiwan
         High Speed Rail Banqiao Station\",\"phone\":\"+886 2 6620 1000\",\"categorySet\":[{\"id\":7380002}],\"url\":\"www.thsrc.com.tw\",\"categories\":[\"international\",\"railway
         station\"],\"classifications\":[{\"code\":\"RAILWAY_STATION\",\"names\":[{\"nameLocale\":\"en-US\",\"name\":\"international\"},{\"nameLocale\":\"en-US\",\"name\":\"railway
         station\"}]}]},\"address\":{\"streetNumber\":\"7\",\"streetName\":\"Xianmin
@@ -161,8 +161,8 @@ interactions:
         District\"},\"position\":{\"lat\":24.11321,\"lon\":120.61569},\"viewport\":{\"topLeftPoint\":{\"lat\":24.11437,\"lon\":120.61442},\"btmRightPoint\":{\"lat\":24.11205,\"lon\":120.61696}},\"entryPoints\":[{\"type\":\"main\",\"position\":{\"lat\":24.11209,\"lon\":120.61536}}]},{\"type\":\"POI\",\"id\":\"g6JpZK8xNTgwMDkwMDIxNjY5NjmhY6NUV06hdqdVbmlmaWVk\",\"score\":8.2073192596,\"info\":\"search:ta:158009002166969-TW\",\"poi\":{\"name\":\"Taiwan
         Fresh Supermarket Taiwan High Speed Rail Store\",\"phone\":\"+886 4 2336 8946\",\"brands\":[{\"name\":\"Taiwan
         Fresh Supermarket\"}],\"categorySet\":[{\"id\":7332005}],\"categories\":[\"market\",\"supermarkets
-        hypermarkets\"],\"classifications\":[{\"code\":\"MARKET\",\"names\":[{\"nameLocale\":\"en-US\",\"name\":\"market\"},{\"nameLocale\":\"en-US\",\"name\":\"supermarkets
-        hypermarkets\"}]}]},\"address\":{\"streetNumber\":\"118\",\"streetName\":\"Zhongshan
+        hypermarkets\"],\"classifications\":[{\"code\":\"MARKET\",\"names\":[{\"nameLocale\":\"en-US\",\"name\":\"supermarkets
+        hypermarkets\"},{\"nameLocale\":\"en-US\",\"name\":\"market\"}]}]},\"address\":{\"streetNumber\":\"118\",\"streetName\":\"Zhongshan
         Road Section 2\",\"municipalitySubdivision\":\"Wuri District\",\"municipality\":\"Taichung
         City\",\"countrySubdivision\":\"Taichung City\",\"postalCode\":\"414\",\"extendedPostalCode\":\"41441\",\"countryCode\":\"TW\",\"country\":\"Taiwan\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"118,
         Zhongshan Road Section 2, Wuri District, Taichung City 41441\",\"localName\":\"Wuri
@@ -193,7 +193,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 06 Dec 2021 08:55:42 GMT
+      - Fri, 10 Dec 2021 07:03:35 GMT
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -205,7 +205,7 @@ interactions:
       x-ms-azuremaps-region:
       - West US 2
       x-msedge-ref:
-      - 'Ref A: A0038FB5EC914C11948DA4E4575A506D Ref B: TYAEDGE1007 Ref C: 2021-12-06T08:55:42Z'
+      - 'Ref A: 11B7CC4991954D2C98DD533BAD0F7ACF Ref B: TYO01EDGE0915 Ref C: 2021-12-10T07:03:36Z'
     status:
       code: 200
       message: OK

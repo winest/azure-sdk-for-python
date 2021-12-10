@@ -15,68 +15,68 @@ interactions:
       x-ms-client-id:
       - <RealClientId>
     method: GET
-    uri: https://atlas.microsoft.com/search/fuzzy/json?api-version=1.0&query=19F.%2C%20No.%2068%2C%20Sec.%205%2C%20Zhongxiao%20E.%20Rd.%2C%20Xinyi%20Dist.%2C%20Taipei%20City%2C%20Taiwan
+    uri: https://atlas.microsoft.com/search/fuzzy/json?api-version=1.0&query=No.%20221%2C%20Sec.%202%2C%20Zhishan%20Rd.%2C%20Shilin%20Dist.%2C%20Taipei%20City%20111%2C%20Taiwan%20%28R.O.C.%29
   response:
     body:
-      string: "{\"summary\":{\"query\":\"19f no 68 sec 5 zhongxiao e rd xinyi dist
-        taipei city taiwan\",\"queryType\":\"NON_NEAR\",\"queryTime\":650,\"numResults\":10,\"offset\":0,\"totalResults\":2324,\"fuzzyLevel\":2},\"results\":[{\"type\":\"Point
-        Address\",\"id\":\"TW/PAD/p0/4153525\",\"score\":19.1392402649,\"address\":{\"streetNumber\":\"5\",\"streetName\":\"Zhongxiao
-        East Road Section 5 Lane 790 Alley 68\",\"municipalitySubdivision\":\"Xinyi
-        District\",\"municipality\":\"Taipei City\",\"countrySubdivision\":\"Taipei
-        City\",\"postalCode\":\"110\",\"extendedPostalCode\":\"11082\",\"countryCode\":\"TW\",\"country\":\"Taiwan\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"5,
-        Zhongxiao East Road Section 5 Lane 790 Alley 68, Xinyi District, Taipei City
-        11082\",\"localName\":\"Xinyi District\"},\"position\":{\"lat\":25.04055,\"lon\":121.58325},\"viewport\":{\"topLeftPoint\":{\"lat\":25.04145,\"lon\":121.58226},\"btmRightPoint\":{\"lat\":25.03965,\"lon\":121.58424}},\"entryPoints\":[{\"type\":\"main\",\"position\":{\"lat\":25.04066,\"lon\":121.58321}}]},{\"type\":\"Point
-        Address\",\"id\":\"TW/PAD/p0/2441137\",\"score\":17.5453357697,\"address\":{\"streetNumber\":\"1-5\",\"streetName\":\"Zhongxiao
-        East Road Section 5\",\"municipalitySubdivision\":\"Xinyi District\",\"municipality\":\"Taipei
-        City\",\"countrySubdivision\":\"Taipei City\",\"postalCode\":\"110\",\"extendedPostalCode\":\"11071\",\"countryCode\":\"TW\",\"country\":\"Taiwan\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"1-5,
-        Zhongxiao East Road Section 5, Xinyi District, Taipei City 11071\",\"localName\":\"Xinyi
-        District\"},\"position\":{\"lat\":25.04152,\"lon\":121.565},\"viewport\":{\"topLeftPoint\":{\"lat\":25.04242,\"lon\":121.56401},\"btmRightPoint\":{\"lat\":25.04062,\"lon\":121.56599}},\"entryPoints\":[{\"type\":\"main\",\"position\":{\"lat\":25.04123,\"lon\":121.56498}}]},{\"type\":\"Point
-        Address\",\"id\":\"TW/PAD/p0/2961271\",\"score\":17.5453357697,\"address\":{\"streetNumber\":\"508-5\",\"streetName\":\"Zhongxiao
-        East Road Section 5\",\"municipalitySubdivision\":\"Xinyi District\",\"municipality\":\"Taipei
-        City\",\"countrySubdivision\":\"Taipei City\",\"postalCode\":\"110\",\"countryCode\":\"TW\",\"country\":\"Taiwan\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"508-5,
-        Zhongxiao East Road Section 5, Xinyi District, Taipei City 110\",\"localName\":\"Xinyi
-        District\"},\"position\":{\"lat\":25.04077,\"lon\":121.57859},\"viewport\":{\"topLeftPoint\":{\"lat\":25.04167,\"lon\":121.5776},\"btmRightPoint\":{\"lat\":25.03987,\"lon\":121.57958}},\"entryPoints\":[{\"type\":\"main\",\"position\":{\"lat\":25.04101,\"lon\":121.57843}}]},{\"type\":\"Point
-        Address\",\"id\":\"TW/PAD/p0/3331981\",\"score\":17.5453357697,\"address\":{\"streetNumber\":\"510-5\",\"streetName\":\"Zhongxiao
-        East Road Section 5\",\"municipalitySubdivision\":\"Xinyi District\",\"municipality\":\"Taipei
-        City\",\"countrySubdivision\":\"Taipei City\",\"postalCode\":\"110\",\"extendedPostalCode\":\"11077\",\"countryCode\":\"TW\",\"country\":\"Taiwan\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"510-5,
-        Zhongxiao East Road Section 5, Xinyi District, Taipei City 11077\",\"localName\":\"Xinyi
-        District\"},\"position\":{\"lat\":25.04104,\"lon\":121.57912},\"viewport\":{\"topLeftPoint\":{\"lat\":25.04194,\"lon\":121.57813},\"btmRightPoint\":{\"lat\":25.04014,\"lon\":121.58011}},\"entryPoints\":[{\"type\":\"main\",\"position\":{\"lat\":25.0413,\"lon\":121.57895}}]},{\"type\":\"Point
-        Address\",\"id\":\"TW/PAD/p0/4234137\",\"score\":17.5453357697,\"address\":{\"streetNumber\":\"412-5\",\"streetName\":\"Zhongxiao
-        East Road Section 5\",\"municipalitySubdivision\":\"Xinyi District\",\"municipality\":\"Taipei
-        City\",\"countrySubdivision\":\"Taipei City\",\"postalCode\":\"110\",\"extendedPostalCode\":\"11061\",\"countryCode\":\"TW\",\"country\":\"Taiwan\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"412-5,
-        Zhongxiao East Road Section 5, Xinyi District, Taipei City 11061\",\"localName\":\"Xinyi
-        District\"},\"position\":{\"lat\":25.04047,\"lon\":121.57523},\"viewport\":{\"topLeftPoint\":{\"lat\":25.04137,\"lon\":121.57424},\"btmRightPoint\":{\"lat\":25.03957,\"lon\":121.57622}},\"entryPoints\":[{\"type\":\"main\",\"position\":{\"lat\":25.04081,\"lon\":121.57525}}]},{\"type\":\"Point
-        Address\",\"id\":\"TW/PAD/p0/4234181\",\"score\":17.5453357697,\"address\":{\"streetNumber\":\"410-5\",\"streetName\":\"Zhongxiao
-        East Road Section 5\",\"municipalitySubdivision\":\"Xinyi District\",\"municipality\":\"Taipei
-        City\",\"countrySubdivision\":\"Taipei City\",\"postalCode\":\"110\",\"extendedPostalCode\":\"11061\",\"countryCode\":\"TW\",\"country\":\"Taiwan\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"410-5,
-        Zhongxiao East Road Section 5, Xinyi District, Taipei City 11061\",\"localName\":\"Xinyi
-        District\"},\"position\":{\"lat\":25.04046,\"lon\":121.57503},\"viewport\":{\"topLeftPoint\":{\"lat\":25.04136,\"lon\":121.57404},\"btmRightPoint\":{\"lat\":25.03956,\"lon\":121.57602}},\"entryPoints\":[{\"type\":\"main\",\"position\":{\"lat\":25.04082,\"lon\":121.57504}}]},{\"type\":\"Point
-        Address\",\"id\":\"TW/PAD/p0/4419082\",\"score\":17.5453357697,\"address\":{\"streetNumber\":\"17-5\",\"streetName\":\"Zhongxiao
-        East Road Section 5\",\"municipalitySubdivision\":\"Xinyi District\",\"municipality\":\"Taipei
-        City\",\"countrySubdivision\":\"Taipei City\",\"postalCode\":\"110\",\"extendedPostalCode\":\"11071\",\"countryCode\":\"TW\",\"country\":\"Taiwan\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"17-5,
-        Zhongxiao East Road Section 5, Xinyi District, Taipei City 11071\",\"localName\":\"Xinyi
-        District\"},\"position\":{\"lat\":25.0413,\"lon\":121.5656},\"viewport\":{\"topLeftPoint\":{\"lat\":25.0422,\"lon\":121.56461},\"btmRightPoint\":{\"lat\":25.0404,\"lon\":121.56659}},\"entryPoints\":[{\"type\":\"main\",\"position\":{\"lat\":25.0412,\"lon\":121.5656}}]},{\"type\":\"Point
-        Address\",\"id\":\"TW/PAD/p0/4415707\",\"score\":17.5206680298,\"address\":{\"streetNumber\":\"500-5\",\"streetName\":\"Zhongxiao
-        East Road Section 4\",\"municipalitySubdivision\":\"Xinyi District\",\"municipality\":\"Taipei
-        City\",\"countrySubdivision\":\"Taipei City\",\"postalCode\":\"110\",\"extendedPostalCode\":\"11071\",\"countryCode\":\"TW\",\"country\":\"Taiwan\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"500-5,
-        Zhongxiao East Road Section 4, Xinyi District, Taipei City 11071\",\"localName\":\"Xinyi
-        District\"},\"position\":{\"lat\":25.04072,\"lon\":121.56198},\"viewport\":{\"topLeftPoint\":{\"lat\":25.04162,\"lon\":121.56099},\"btmRightPoint\":{\"lat\":25.03982,\"lon\":121.56297}},\"entryPoints\":[{\"type\":\"main\",\"position\":{\"lat\":25.04115,\"lon\":121.56199}}]},{\"type\":\"Address
-        Range\",\"id\":\"TW/ADDR/p0/77419\",\"score\":17.5124855042,\"address\":{\"streetNumber\":\"19\",\"streetName\":\"\u5FE0\u5B5D\u6771\u8DEF\u4E94\u6BB5621\u5DF7\",\"municipalitySubdivision\":\"\u4FE1\u7FA9\u5340\",\"municipality\":\"\u53F0\u5317\u5E02\",\"countrySubdivision\":\"\u53F0\u5317\u5E02\",\"postalCode\":\"110\",\"countryCode\":\"TW\",\"country\":\"\u53F0\u7063\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"19,
-        \u5FE0\u5B5D\u6771\u8DEF\u4E94\u6BB5621\u5DF7, \u4FE1\u7FA9\u5340, \u53F0\u5317\u5E02
-        110\",\"localName\":\"\u4FE1\u7FA9\u5340\"},\"position\":{\"lat\":25.04245,\"lon\":121.57886},\"viewport\":{\"topLeftPoint\":{\"lat\":25.04245,\"lon\":121.57891},\"btmRightPoint\":{\"lat\":25.04204,\"lon\":121.57892}},\"addressRanges\":{\"rangeRight\":\"19
-        - 1\",\"from\":{\"lat\":25.04245,\"lon\":121.57891},\"to\":{\"lat\":25.04204,\"lon\":121.57892}}},{\"type\":\"Point
-        Address\",\"id\":\"TW/PAD/p0/162703\",\"score\":17.3861865997,\"address\":{\"streetNumber\":\"5\",\"streetName\":\"Zhongxiao
-        East Road Section 5 Lane 71\",\"municipalitySubdivision\":\"Xinyi District\",\"municipality\":\"Taipei
-        City\",\"countrySubdivision\":\"Taipei City\",\"postalCode\":\"110\",\"extendedPostalCode\":\"11064\",\"countryCode\":\"TW\",\"country\":\"Taiwan\",\"countryCodeISO3\":\"TWN\",\"freeformAddress\":\"5,
-        Zhongxiao East Road Section 5 Lane 71, Xinyi District, Taipei City 11064\",\"localName\":\"Xinyi
-        District\"},\"position\":{\"lat\":25.04169,\"lon\":121.56742},\"viewport\":{\"topLeftPoint\":{\"lat\":25.04259,\"lon\":121.56643},\"btmRightPoint\":{\"lat\":25.04079,\"lon\":121.56841}},\"entryPoints\":[{\"type\":\"main\",\"position\":{\"lat\":25.04169,\"lon\":121.56731}}]}]}"
+      string: '{"summary":{"query":"no 221 sec 2 zhishan rd shilin dist taipei city
+        111 taiwan r o c","queryType":"NON_NEAR","queryTime":899,"numResults":10,"offset":0,"totalResults":850,"fuzzyLevel":2},"results":[{"type":"Point
+        Address","id":"TW/PAD/p0/848986","score":17.4929943085,"address":{"streetNumber":"11-2","streetName":"Zhishan
+        Road Section 2","municipalitySubdivision":"Shilin District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"111","extendedPostalCode":"11143","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"11-2,
+        Zhishan Road Section 2, Shilin District, Taipei City 11143","localName":"Shilin
+        District"},"position":{"lat":25.09735,"lon":121.54401},"viewport":{"topLeftPoint":{"lat":25.09825,"lon":121.54302},"btmRightPoint":{"lat":25.09645,"lon":121.545}},"entryPoints":[{"type":"main","position":{"lat":25.09723,"lon":121.544}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/1576501","score":17.4929943085,"address":{"streetNumber":"90-2","streetName":"Zhishan
+        Road Section 2","municipalitySubdivision":"Shilin District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"111","extendedPostalCode":"11143","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"90-2,
+        Zhishan Road Section 2, Shilin District, Taipei City 11143","localName":"Shilin
+        District"},"position":{"lat":25.09775,"lon":121.54639},"viewport":{"topLeftPoint":{"lat":25.09865,"lon":121.5454},"btmRightPoint":{"lat":25.09685,"lon":121.54738}},"entryPoints":[{"type":"main","position":{"lat":25.09793,"lon":121.54629}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/2452420","score":17.4929943085,"address":{"streetNumber":"3-2","streetName":"Zhishan
+        Road Section 2","municipalitySubdivision":"Shilin District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"111","extendedPostalCode":"11143","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"3-2,
+        Zhishan Road Section 2, Shilin District, Taipei City 11143","localName":"Shilin
+        District"},"position":{"lat":25.09764,"lon":121.54334},"viewport":{"topLeftPoint":{"lat":25.09854,"lon":121.54235},"btmRightPoint":{"lat":25.09674,"lon":121.54433}},"entryPoints":[{"type":"main","position":{"lat":25.09724,"lon":121.54334}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/2452437","score":17.4929943085,"address":{"streetNumber":"5-2","streetName":"Zhishan
+        Road Section 2","municipalitySubdivision":"Shilin District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"111","extendedPostalCode":"11143","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"5-2,
+        Zhishan Road Section 2, Shilin District, Taipei City 11143","localName":"Shilin
+        District"},"position":{"lat":25.09764,"lon":121.54352},"viewport":{"topLeftPoint":{"lat":25.09854,"lon":121.54253},"btmRightPoint":{"lat":25.09674,"lon":121.54451}},"entryPoints":[{"type":"main","position":{"lat":25.09724,"lon":121.54351}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/2644785","score":17.4929943085,"address":{"streetNumber":"360-2","streetName":"Zhishan
+        Road Section 2","municipalitySubdivision":"Shilin District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"111","extendedPostalCode":"11144","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"360-2,
+        Zhishan Road Section 2, Shilin District, Taipei City 11144","localName":"Shilin
+        District"},"position":{"lat":25.10468,"lon":121.55715},"viewport":{"topLeftPoint":{"lat":25.10558,"lon":121.55616},"btmRightPoint":{"lat":25.10378,"lon":121.55814}},"entryPoints":[{"type":"main","position":{"lat":25.10473,"lon":121.55705}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/2651670","score":17.4929943085,"address":{"streetNumber":"7-2","streetName":"Zhishan
+        Road Section 2","municipalitySubdivision":"Shilin District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"111","extendedPostalCode":"11143","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"7-2,
+        Zhishan Road Section 2, Shilin District, Taipei City 11143","localName":"Shilin
+        District"},"position":{"lat":25.09757,"lon":121.54365},"viewport":{"topLeftPoint":{"lat":25.09847,"lon":121.54266},"btmRightPoint":{"lat":25.09667,"lon":121.54464}},"entryPoints":[{"type":"main","position":{"lat":25.09724,"lon":121.54365}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/2445802","score":17.3722953796,"address":{"streetNumber":"2","streetName":"Zhishan
+        Road Section 2 Lane 332","municipalitySubdivision":"Shilin District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"111","extendedPostalCode":"11143","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"2,
+        Zhishan Road Section 2 Lane 332, Shilin District, Taipei City 11143","localName":"Shilin
+        District"},"position":{"lat":25.10222,"lon":121.55356},"viewport":{"topLeftPoint":{"lat":25.10312,"lon":121.55257},"btmRightPoint":{"lat":25.10132,"lon":121.55455}},"entryPoints":[{"type":"main","position":{"lat":25.10203,"lon":121.5534}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/2451515","score":17.3722953796,"address":{"streetNumber":"2","streetName":"Zhishan
+        Road Section 2 Lane 421","municipalitySubdivision":"Shilin District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"111","extendedPostalCode":"11144","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"2,
+        Zhishan Road Section 2 Lane 421, Shilin District, Taipei City 11144","localName":"Shilin
+        District"},"position":{"lat":25.10836,"lon":121.55706},"viewport":{"topLeftPoint":{"lat":25.10926,"lon":121.55607},"btmRightPoint":{"lat":25.10746,"lon":121.55805}},"entryPoints":[{"type":"main","position":{"lat":25.10829,"lon":121.55709}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/2644830","score":17.3722953796,"address":{"streetNumber":"2","streetName":"Zhishan
+        Road Section 2 Lane 361","municipalitySubdivision":"Shilin District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"111","extendedPostalCode":"11143","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"2,
+        Zhishan Road Section 2 Lane 361, Shilin District, Taipei City 11143","localName":"Shilin
+        District"},"position":{"lat":25.10418,"lon":121.55522},"viewport":{"topLeftPoint":{"lat":25.10508,"lon":121.55423},"btmRightPoint":{"lat":25.10328,"lon":121.55621}},"entryPoints":[{"type":"main","position":{"lat":25.10399,"lon":121.55539}}]},{"type":"Point
+        Address","id":"TW/PAD/p0/3404317","score":17.3722953796,"address":{"streetNumber":"2","streetName":"Zhishan
+        Road Section 2 Lane 441","municipalitySubdivision":"Shilin District","municipality":"Taipei
+        City","countrySubdivision":"Taipei City","postalCode":"111","extendedPostalCode":"11144","countryCode":"TW","country":"Taiwan","countryCodeISO3":"TWN","freeformAddress":"2,
+        Zhishan Road Section 2 Lane 441, Shilin District, Taipei City 11144","localName":"Shilin
+        District"},"position":{"lat":25.10862,"lon":121.55694},"viewport":{"topLeftPoint":{"lat":25.10952,"lon":121.55595},"btmRightPoint":{"lat":25.10772,"lon":121.55793}},"entryPoints":[{"type":"main","position":{"lat":25.10863,"lon":121.55691}}]}]}'
     headers:
       content-length:
-      - '7358'
+      - '7307'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 06 Dec 2021 08:55:41 GMT
+      - Fri, 10 Dec 2021 07:03:34 GMT
       strict-transport-security:
       - max-age=31536000; includeSubDomains
       vary:
@@ -88,7 +88,7 @@ interactions:
       x-ms-azuremaps-region:
       - West US 2
       x-msedge-ref:
-      - 'Ref A: 95FB4FDA6FCA4A20B52001B13D2FF6A5 Ref B: TYBEDGE0915 Ref C: 2021-12-06T08:55:41Z'
+      - 'Ref A: E099B634ABE4413D89E2C7AE87C981B8 Ref B: TYBEDGE0807 Ref C: 2021-12-10T07:03:33Z'
     status:
       code: 200
       message: OK

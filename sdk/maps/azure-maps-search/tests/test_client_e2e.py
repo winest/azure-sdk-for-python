@@ -44,7 +44,15 @@ class AzureMapsSearchClientE2ETest(AzureTestCase):
 
     def test_fuzzy_search_poi_coordinates(self):
         result = self.client.fuzzy_search("Taipei 101", coordinates=LatLon(25.0338053, 121.5640089))
-        assert len(result.results) > 0 and result.results[0].type == "POI"
+        assert len(result.results) > 0
+        top_answer = result.results[0]
+        assert top_answer.type == "POI"
+        assert top_answer.point_of_interest.name == "Taipei 101"
+        assert top_answer.address.street_name == "Xinyi Road Section 5"
+        assert top_answer.address.municipality == "Taipei City"
+        assert top_answer.address.postal_code == "110"
+        assert top_answer.address.country_code_iso3 == "TWN"
+        assert top_answer.position.lat == 25.03339 and top_answer.position.lon == 121.56437
 
     def test_fuzzy_search_poi_country_set(self):
         result = self.client.fuzzy_search("Taipei 101", country_filter=["TW"])
@@ -61,10 +69,21 @@ class AzureMapsSearchClientE2ETest(AzureTestCase):
         assert len(result.results) == 0
 
     def test_fuzzy_search_address(self):
-        result = self.client.fuzzy_search("19F., No. 68, Sec. 5, Zhongxiao E. Rd., Xinyi Dist., Taipei City, Taiwan")
-        assert len(result.results) > 0 and result.results[0].address.municipality == "Taipei City"
+        result = self.client.fuzzy_search("No. 221, Sec. 2, Zhishan Rd., Shilin Dist., Taipei City 111, Taiwan (R.O.C.)")
+        assert len(result.results) > 0
+        top_answer = result.results[0]
+        assert top_answer.type == "Point Address"
+        assert top_answer.address.street_name == "Zhishan Road Section 2"
+        assert top_answer.address.municipality == "Taipei City"
+        assert top_answer.address.postal_code == "111"
+        assert top_answer.address.country_code_iso3 == "TWN"
+        assert top_answer.position.lat == 25.09735 and top_answer.position.lon == 121.54401
 
-    def test_fuzzy_search_multiple_results(self):
+    def test_fuzzy_search_top(self):
+        result = self.client.fuzzy_search("Taiwan High Speed Rail", top=5)
+        assert len(result.results) == 5
+
+    def test_fuzzy_search_skip(self):
         result = self.client.fuzzy_search("Taiwan High Speed Rail")
         assert len(result.results) > 0
 
@@ -98,15 +117,23 @@ class AzureMapsSearchClientE2ETest(AzureTestCase):
             assert "RESTAURANT" in [category.code for category in item.point_of_interest.classifications]
 
     def test_search_structured_address(self):
-        addr = StructuredAddress(street_number=68,
-                                 street_name="Sec. 5, Zhongxiao E. Rd.",
-                                 municipality_subdivision="Xinyi Dist.",
+        addr = StructuredAddress(street_number=221,
+                                 street_name="Sec. 2, Zhishan Rd.",
+                                 municipality_subdivision="Shilin Dist.",
                                  municipality="Taipei City",
                                  country_code="TW")
         result = self.client.search_structured_address(addr)
         assert len(result.results) > 0
         for item in result.results:
             assert item.type != "POI"
+        top_answer = result.results[0]
+        assert top_answer.type == "Point Address"
+        assert top_answer.address.street_name == "Zhishan Road Section 2"
+        assert top_answer.address.municipality == "Taipei City"
+        assert top_answer.address.postal_code == "111"
+        assert top_answer.address.country_code_iso3 == "TWN"
+        assert top_answer.position.lat == 25.09735 and top_answer.position.lon == 121.54401
+
 
 
 

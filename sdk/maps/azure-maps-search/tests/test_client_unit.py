@@ -136,12 +136,14 @@ class AzureMapsSearchClientUnitTest(AzureTestCase):
         client = create_mock_client(status_code=200, body=body)
         result = client.fuzzy_search("Taipei 101")
         assert len(result.results) == 1 and result.summary.total_results == 1
-        info = result.results[0]
-        assert info.type == "POI"
-        assert info.point_of_interest.name == "Taipei 101"
-        assert info.address.country_code_iso3 == "TWN"
-        assert info.address.street_name == "Xinyi Road Section 5"
-        assert info.position.lat == 25.03454 and info.position.lon == 121.56449
+        top_answer = result.results[0]
+        assert top_answer.type == "POI"
+        assert top_answer.point_of_interest.name == "Taipei 101"
+        assert top_answer.address.street_name == "Xinyi Road Section 5"
+        assert top_answer.address.municipality == "Taipei City"
+        assert top_answer.address.postal_code == "110"
+        assert top_answer.address.country_code_iso3 == "TWN"
+        assert top_answer.position.lat == 25.03454 and top_answer.position.lon == 121.56449
 
     def test_fuzzy_search_invalid_top(self):
         body = '''{
